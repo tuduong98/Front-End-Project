@@ -19,6 +19,9 @@ html {
 
   --color-heading: #1b0760;
   --color-body: #919ca4;
+
+  --color-border: #ccc;
+  --border-radius: 30px;
 }
 
 body {
@@ -241,10 +244,10 @@ a {
 .input {
   padding: 1.5rem 3.5rem;
   border: 1px solid var(--color-body);
-  border-radius: 30px;
+  border-radius: var(--border-radius);
   outline: none;
   font-size: 2rem;
-  color: var(--color-heading);
+  color: var(--color-border);
   background-color: white;
 }
 
@@ -256,4 +259,22 @@ a {
   .input {
     font-size: 1.5rem;
   }
+}
+
+/* Input + Buttons (Input group) */
+.input-group {
+  display: flex;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+}
+
+.input-group .input {
+  flex: 1;
+  padding: 1.5rem 1rem;
+  border: none;
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
+}
+
+.input-group .btn {
+  margin: 4px;
 }
