@@ -1,13 +1,12 @@
+/* Typography */
+/* (10x100)/16 = 62.5% */
+/* 62.5% of 16px = 10px */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
-/* Typography Components */
-/* font size = (10x100)/16 = 62.5% */
 html {
   font-size: 62.5%;
 }
@@ -39,17 +38,15 @@ h3 {
 }
 
 h1 {
+  /* 1 x font-size of the html-element = 16px */
   font-size: 7rem;
 }
-
 h2 {
   font-size: 4rem;
 }
-
 h3 {
   font-size: 3rem;
 }
-
 p {
   margin-top: 0;
 }
@@ -79,11 +76,10 @@ p {
 }
 
 .link-arrow::after {
-  content: "→";
+  content: "-->";
   margin-left: 5px;
   transition: margin 0.15s ease 0s;
 }
-
 .link-arrow:hover::after {
   margin-left: 10px;
 }
@@ -99,7 +95,7 @@ a {
 }
 
 /* Badges */
-.badges {
+.badge {
   background: var(--color-accent);
   border-radius: 20px;
   font-size: 2rem;
@@ -110,12 +106,11 @@ a {
 
 .badge--primary {
   background: var(--color-primary);
-  color: white;
+  color: #fff;
 }
-
 .badge--secondary {
   background: var(--color-secondary);
-  color: white;
+  color: #fff;
 }
 
 .badge--small {
@@ -123,7 +118,7 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
-  .badges {
+  .badge {
     font-size: 1.5rem;
   }
   .badge--small {
@@ -142,17 +137,14 @@ a {
   display: inline-block;
   margin-right: 2rem;
 }
-
 .list--tick {
-  list-style-image: url("../icons/tick.svg");
+  list-style-image: url(../icons/tick.svg);
   padding-left: 3rem;
 }
-
 .list--tick .list__item {
   padding-left: 0.5rem;
   margin-bottom: 1rem;
 }
-
 @media screen and (min-width: 1024px) {
   .list--tick .list__item {
     padding-left: 0;
@@ -173,9 +165,7 @@ a {
   background: #e9f5ff;
   width: 64px;
   height: 64px;
-
   border-radius: 100%;
-
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -183,11 +173,11 @@ a {
 
 /* Buttons */
 .btn {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 600;
   text-transform: uppercase;
   padding: 2rem 3rem;
-  border: none;
+  border: 0;
   border-radius: 40px;
   cursor: pointer;
   white-space: nowrap;
@@ -197,36 +187,34 @@ a {
 
 .btn-primary {
   background: var(--color-primary);
-  color: white;
+  color: #fff;
 }
 .btn-primary:hover {
-  background: #2584f094;
+  background: #2584f0db;
 }
-
 .btn-secondary {
   background: var(--color-secondary);
-  color: white;
+  color: #fff;
 }
 .btn-secondary:hover {
-  background: #00d9f59c;
+  background: #00d9f5c4;
 }
-
 .btn-accent {
   background: var(--color-accent);
-  color: white;
+  color: #fff;
 }
 .btn-accent:hover {
-  background: #f34040a6;
+  background: #f34040c7;
 }
 
 .btn--outline {
-  background: white;
+  background: #fff;
   color: var(--color-heading);
   border: 2px solid var(--color-heading);
 }
 .btn--outline:hover {
   background: var(--color-heading);
-  color: white;
+  color: #fff;
 }
 
 .btn--block {
@@ -240,18 +228,19 @@ a {
   }
 }
 
-/* Input */
+/* input */
 .input {
   padding: 1.5rem 3.5rem;
   border: 1px solid var(--color-body);
   border-radius: var(--border-radius);
+
   outline: none;
   font-size: 2rem;
   color: var(--color-border);
-  background-color: white;
+  background: #fff;
 }
 
-.input ::placeholder {
+.input::placeholder {
   color: #cdcdcd;
 }
 
@@ -261,29 +250,26 @@ a {
   }
 }
 
-/* Input + Buttons (Input group) */
+/* input + button (input group) */
 .input-group {
   display: flex;
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
 }
-
 .input-group .input {
-  flex: 1;
+  border: 0;
   padding: 1.5rem 1rem;
-  border: none;
-  border-radius: var(--border-radius) 0 0 var(--border-radius);
+  flex: 1;
 }
-
 .input-group .btn {
   margin: 4px;
 }
 
 /* Cards */
 .card {
-  overflow: hidden;
-  box-shadow: 0 0 20px 10px #59a6ff94;
   border-radius: 7px;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  overflow: hidden;
 }
 
 .card__header,
@@ -291,17 +277,61 @@ a {
   padding: 2rem 3rem;
 }
 
-.card-primary .card__header {
-  background: var(--color-primary);
-  color: white;
-}
-.card-secondary .card__header {
-  background: var(--color-secondary);
-  color: white;
-}
-.card-accent .card__header {
-  background: var(--color-accent);
+.card--primary .card__header {
+  background-color: var(--color-primary);
   color: white;
 }
 
+.card--secondary .card__header {
+  background-color: var(--color-secondary);
+  color: white;
+}
 
+/* Plans */
+
+.plan__name {
+  color: #fff;
+  margin: 0;
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+
+.plan__price {
+  font-size: 6rem;
+}
+.plan__billing-cycle {
+  font-size: 2.4rem;
+  font-weight: 300;
+  opacity: 0.8;
+  margin-right: 1rem;
+}
+.card--secondary .badge--secondary {
+  background-color: #00c8eb;
+}
+.badge--small {
+  padding: 0.5rem 1.5rem;
+}
+.plan__description {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+@media screen and (min-width: 1024px) {
+  .plan__name {
+    font-size: 4rem;
+  }
+
+  .plan__price {
+    font-size: 5rem;
+  }
+
+  .plan__billing-cycle {
+    font-size: 1.6rem;
+  }
+
+  .plan__description {
+    font-size: 1.7rem;
+    display: block;
+  }
+}
