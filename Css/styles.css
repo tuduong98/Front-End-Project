@@ -1,0 +1,25 @@
+:root {
+  --color-primary: #2584f0;
+  --color-secondary: #00d9f5;
+  --color-accent: #f34040;
+
+  --color-heading: #1b0760;
+  --color-body: #919ca4;
+}
+
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  color: var(--color-body);
+}
+
+h1 {
+  color: var(--color-heading);
+}
+
+h2 {
+  color: var(--color-heading);
+}
+
+h3 {
+  color: var(--color-heading);
+}
