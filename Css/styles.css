@@ -335,3 +335,17 @@ a {
     display: block;
   }
 }
+
+/* Popular badge */
+.plan--popular .card__header {
+  position: relative;
+}
+
+.plan--popular .card__header::before {
+  content: url("../icons/popular.svg");
+  display: inline-block;
+  width: 40px;
+  position: absolute;
+  top: -6px;
+  right: 5%;
+}
