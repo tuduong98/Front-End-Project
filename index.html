@@ -14,7 +14,6 @@
       rel="stylesheet"
     />
   </head>
-
   <body>
     <header>
       <nav class="nav collapsible">
@@ -73,11 +72,7 @@
 
         <!-- Search Box -->
         <div class="input-group">
-          <input
-            type="text"
-            class="input"
-            placeholder="Enter domain name here..."
-          />
+          <input type="text" class="input" placeholder="Enter domain name..." />
           <button class="btn btn--accent">
             <svg class="icon icon--white">
               <use xlink:href="ico/sprite.svg#search"></use>
@@ -100,15 +95,6 @@
 
     <section>
       <section class="block block--plans container">
-        <!-- Header cho Plans Section -->
-        <header class="block__header">
-          <h2>Choose Your Perfect Plan</h2>
-          <p>
-            Flexible hosting solutions designed to grow with your business.
-            Choose the plan that fits your needs.
-          </p>
-        </header>
-
         <div class="grid grid--1x3">
           <!-- Plan 1 -->
           <div class="card card--secondary">
@@ -126,8 +112,6 @@
                 <li class="list__item">1 Website</li>
                 <li class="list__item">50 GB SSD</li>
                 <li class="list__item">Free SSL</li>
-                <li class="list__item">24/7 Support</li>
-                <li class="list__item">99.9% Uptime</li>
               </ul>
               <a href="#" class="btn btn--outline btn--block">Buy Now</a>
             </div>
@@ -149,8 +133,6 @@
                 <li class="list__item">5 Websites</li>
                 <li class="list__item">100 GB SSD</li>
                 <li class="list__item">Free SSL + CDN</li>
-                <li class="list__item">Priority Support</li>
-                <li class="list__item">Advanced Analytics</li>
               </ul>
               <a href="#" class="btn btn--outline btn--block">Buy Now</a>
             </div>
@@ -172,8 +154,6 @@
                 <li class="list__item">Unlimited Websites</li>
                 <li class="list__item">1 TB SSD</li>
                 <li class="list__item">Priority Support</li>
-                <li class="list__item">Advanced Security</li>
-                <li class="list__item">White-label Options</li>
               </ul>
               <a href="#" class="btn btn--outline btn--block">Buy Now</a>
             </div>
@@ -182,142 +162,44 @@
       </section>
     </section>
 
-    <!-- Features Section -->
-    <section class="block block--features">
-      <div class="container">
+    <section>
+      <section class="block container">
         <header class="block__header">
           <h2>Host on the cloud to keep growing</h2>
           <p>Scale your infrastructure with ease and reliability.</p>
         </header>
+        <!-- Feature 1 -->
+        <article class="feature grid grid--1x2">
+          <div class="feature__content">
+            <svg class="icon icon--primary">
+              <use xlink:href="ico/sprite.svg#easy"></use>
+            </svg>
+            <h3 class="feature__heading">Super easy to use</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="link-arrow">Learn more</a>
+          </div>
 
-        <div class="features-grid">
-          <!-- Feature 1 -->
-          <article class="feature grid grid--1x2">
-            <div class="feature__content">
-              <div class="icon-container">
-                <svg class="icon">
-                  <use xlink:href="icons/sprite.svg#easy"></use>
-                </svg>
-              </div>
-              <h3 class="feature__heading">Super easy to use</h3>
-              <p>
-                Our intuitive control panel makes website management effortless.
-                Deploy, scale, and monitor your applications with just a few
-                clicks.
-              </p>
-              <a href="#" class="link-arrow">Learn more</a>
-            </div>
-
-            <picture>
-              <source
-                type="image/webp"
-                srcset="images/easy-570px.webp 1x, images/easy-1140px.webp 2x"
-              />
-              <source
-                type="image/jpg"
-                srcset="images/easy-570px.jpg 1x, images/easy-1140px.jpg 2x"
-              />
-              <img
-                class="feature__image"
-                src="images/easy@2x.jpg"
-                alt="Easy to use interface"
-              />
-            </picture>
-          </article>
-
-          <!-- Feature 2 -->
-          <article class="feature grid grid--1x2">
-            <div class="feature__content">
-              <div class="icon-container">
-                <svg class="icon">
-                  <use xlink:href="icons/sprite.svg#computer"></use>
-                </svg>
-              </div>
-              <h3 class="feature__heading">Simply fast websites</h3>
-              <p>
-                Experience lightning-fast loading times with our optimized
-                hosting infrastructure. Your visitors will enjoy seamless
-                browsing on any device.
-              </p>
-              <a href="#" class="link-arrow">Learn more</a>
-            </div>
-
-            <picture>
-              <img
-                class="feature__image"
-                src="images/fast.jpg"
-                alt="Fast website performance"
-              />
-            </picture>
-          </article>
-
-          <!-- Feature 3 -->
-          <article class="feature grid grid--1x2">
-            <div class="feature__content">
-              <div class="icon-container">
-                <svg class="icon">
-                  <use xlink:href="icons/sprite.svg#wordpress"></use>
-                </svg>
-              </div>
-              <h3 class="feature__heading">WordPress made easy</h3>
-              <p>
-                One-click WordPress installation with automatic updates and
-                security patches. Focus on your content while we handle the
-                technical details.
-              </p>
-              <a href="#" class="link-arrow">Learn more</a>
-            </div>
-
-            <picture>
-              <img
-                class="feature__image"
-                src="images/wordpress.jpg"
-                alt="WordPress hosting"
-              />
-            </picture>
-          </article>
-
-          <!-- Feature 4 -->
-          <article class="feature grid grid--1x2">
-            <div class="feature__content">
-              <div class="icon-container">
-                <svg class="icon">
-                  <use xlink:href="icons/sprite.svg#clock"></use>
-                </svg>
-              </div>
-              <h3 class="feature__heading">24/7 Expert support</h3>
-              <p>
-                Our dedicated support team is available around the clock to help
-                you succeed. Get expert assistance whenever you need it, day or
-                night.
-              </p>
-              <a href="#" class="link-arrow">Learn more</a>
-            </div>
-
-            <picture>
-              <img
-                class="feature__image"
-                src="images/support.jpg"
-                alt="24/7 customer support"
-              />
-            </picture>
-          </article>
-        </div>
-      </div>
+          <picture>
+            <source
+              type="image/webp"
+              srcset="images/easy-570px.webp 1x, images/easy-1140px.webp 2x"
+            />
+            <source
+              type="image/jpg"
+              srcset="images/easy-570px.jpg 1x, images/easy-1140px.jpg 2x"
+            />
+            <img class="feature__image" src="images/easy@2x.jpg" alt="" />
+          </picture>
+        </article>
+      </section>
     </section>
 
-    <!-- Showcase Section -->
-    <section class="block block--dark block--skewed-right block-showcase">
-      <div class="container">
+    <section>
+      <section class="block block--dark block--skewed-right block-showcase">
         <header class="block__header">
           <h2>User-friendly Control Panel</h2>
-          <p>
-            Manage your websites with ease using our intuitive dashboard.
-            Everything you need is just a click away.
-          </p>
         </header>
-
-        <div class="grid grid--1x2">
+        <div class="container grid grid--1x2">
           <picture class="block-showcase__image">
             <source
               type="image/webp"
@@ -327,94 +209,81 @@
               type="image/png"
               srcset="images/ipad-570px.png 1x, images/ipad-1140px.png 2x"
             />
-            <img
-              src="images/ipad.png"
-              alt="User-friendly control panel interface"
-            />
+            <img src="images/ipad.png" alt="" />
           </picture>
-
           <ul class="list">
             <li>
               <div class="media">
                 <div class="media__image">
-                  <svg class="icon">
+                  <svg class="icon icon--primary">
                     <use xlink:href="ico/sprite.svg#line"></use>
                   </svg>
                 </div>
                 <div class="media__body">
                   <h3 class="media__title">Easy Start & Managed Updates</h3>
                   <p>
-                    Get your website up and running in minutes with our
-                    one-click installers. Automatic updates keep your site
-                    secure and running smoothly without any effort from you.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Veniam quisquam, ex nostrum vero voluptates dicta excepturi
+                    vel perspiciatis consequuntur ab.
                   </p>
                 </div>
               </div>
             </li>
-
             <li>
               <div class="media">
                 <div class="media__image">
-                  <svg class="icon">
+                  <svg class="icon icon--primary">
                     <use xlink:href="ico/sprite.svg#growth"></use>
                   </svg>
                 </div>
                 <div class="media__body">
                   <h3 class="media__title">Staging, GIT & WP-CLI</h3>
                   <p>
-                    Professional development tools at your fingertips. Test
-                    changes safely with staging environments, manage code with
-                    Git integration, and use WP-CLI for advanced WordPress
-                    management.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Veniam quisquam, ex nostrum vero voluptates dicta excepturi
+                    vel perspiciatis consequuntur ab.
                   </p>
                 </div>
               </div>
             </li>
-
             <li>
               <div class="media">
                 <div class="media__image">
-                  <svg class="icon">
+                  <svg class="icon icon--primary">
                     <use xlink:href="ico/sprite.svg#wordpress"></use>
                   </svg>
                 </div>
                 <div class="media__body">
                   <h3 class="media__title">Dynamic Caching & More</h3>
                   <p>
-                    Boost your website performance with intelligent caching
-                    systems. Our advanced optimization techniques ensure
-                    lightning-fast loading times for your visitors.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Veniam quisquam, ex nostrum vero voluptates dicta excepturi
+                    vel perspiciatis consequuntur ab.
                   </p>
                 </div>
               </div>
             </li>
           </ul>
         </div>
-      </div>
+      </section>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="block block--testimonials">
-      <div class="container">
+    <section>
+      <section class="block">
         <header class="block__header">
           <h2>What our customers are saying</h2>
-          <p>
-            Discover why thousands of businesses trust us with their hosting
-            needs. Real stories from real customers who've grown with our
-            platform.
-          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </header>
-
-        <div class="testimonials-grid">
+        <div class="container">
           <div class="card testimonial">
             <div class="grid grid--1x2">
               <div class="testimonial__image">
                 <img
                   src="images/testimonial.jpg"
-                  alt="Sarah Johnson, CEO of TechStart"
+                  alt="A happy smiling customer"
                 />
                 <div class="icon-container icon-container--accent">
-                  <svg class="icon icon--white">
+                  <svg class="icon icon--white icon--small">
                     <use xlink:href="ico/sprite.svg#quotes"></use>
                   </svg>
                 </div>
@@ -422,9 +291,7 @@
 
               <blockquote class="quote testimonial__quote">
                 <p class="quote__text">
-                  This hosting platform transformed our business completely. The
-                  speed, reliability, and support are absolutely outstanding.
-                  We've seen 300% growth since switching!
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </p>
                 <footer>
                   <div class="media">
@@ -435,325 +302,93 @@
                     </div>
                     <div class="media__body">
                       <h3 class="quote__author testimonial__quote-author">
-                        Sarah Johnson
+                        John Smith
                       </h3>
-                      <p class="quote__organization">
-                        CEO, TechStart Solutions
-                      </p>
+                      <p class="quote__organization">ABC Company</p>
                     </div>
                   </div>
                 </footer>
               </blockquote>
             </div>
           </div>
-          <!-- Additional testimonials can be added here -->
-          <div class="card testimonial testimonial--alt">
-            <div class="grid grid--1x2">
-              <div class="testimonial__quote">
-                <p class="quote__text">
-                  The migration process was seamless, and the performance
-                  improvements were immediate. Our site loads 5x faster now.
-                  Highly recommend!
-                </p>
-                <footer>
-                  <div class="media">
-                    <div class="media__image">
-                      <svg class="icon quote__line">
-                        <use xlink:href="ico/sprite.svg#line"></use>
-                      </svg>
-                    </div>
-                    <div class="media__body">
-                      <h3 class="quote__author testimonial__quote-author">
-                        Michael Chen
-                      </h3>
-                      <p class="quote__organization">
-                        Founder, Digital Agency Pro
-                      </p>
-                    </div>
-                  </div>
-                </footer>
-              </div>
-
-              <div class="testimonial__image">
-                <img
-                  src="images/testimonial.jpg"
-                  alt="Michael Chen, Founder of Digital Agency Pro"
-                />
-                <div class="icon-container icon-container--accent">
-                  <svg class="icon icon--white">
-                    <use xlink:href="ico/sprite.svg#quotes"></use>
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <section class="block block--dark footer" role="contentinfo">
-        <div class="container">
-          <!-- Footer Header -->
-          <div class="footer__header">
-            <h2 class="footer__title">Ready to Get Started?</h2>
-            <p class="footer__subtitle">
-              Join thousands of satisfied customers who trust our hosting
-              solutions
-            </p>
-            <div class="footer__cta">
-              <a href="#" class="btn btn--accent btn--stretched"
-                >Start Your Journey</a
-              >
-              <a href="#" class="btn btn--outline">Contact Sales</a>
-            </div>
-          </div>
-
-          <!-- Footer Content Grid -->
-          <div class="grid footer__sections">
-            <!-- Products Section -->
-            <section
-              class="collapsible collapsible--expanded footer__section"
-              aria-labelledby="products-heading"
-            >
-              <header class="collapsible__header">
-                <h3
-                  id="products-heading"
-                  class="collapsible__heading footer__heading"
-                >
-                  Products
-                </h3>
-                <svg
-                  class="icon icon--white collapsible__chevron"
-                  aria-hidden="true"
-                >
-                  <use xlink:href="ico/sprite.svg#chevron"></use>
-                </svg>
-              </header>
-              <div
-                class="collapsible__content"
-                role="region"
-                aria-labelledby="products-heading"
-              >
-                <ul class="list">
-                  <li>
-                    <a href="#" aria-label="Learn more about Website Hosting"
-                      >Website Hosting</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      aria-label="Learn more about Free Automated WordPress"
-                      >Free Automated WordPress</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" aria-label="Learn more about Migrations"
-                      >Migrations</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </section>
-
-            <!-- Company Section -->
-            <section
-              class="collapsible footer__section"
-              aria-labelledby="company-heading"
-            >
-              <header class="collapsible__header">
-                <h3
-                  id="company-heading"
-                  class="collapsible__heading footer__heading"
-                >
-                  Company
-                </h3>
-                <svg
-                  class="icon icon--white collapsible__chevron"
-                  aria-hidden="true"
-                >
-                  <use xlink:href="ico/sprite.svg#chevron"></use>
-                </svg>
-              </header>
-              <div
-                class="collapsible__content"
-                role="region"
-                aria-labelledby="company-heading"
-              >
-                <ul class="list">
-                  <li>
-                    <a href="#" aria-label="Learn more about our company"
-                      >About Us</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" aria-label="Join our affiliate program"
-                      >Affiliates</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" aria-label="Read our blog">Blog</a>
-                  </li>
-                  <li>
-                    <a href="#" aria-label="Career opportunities">Careers</a>
-                  </li>
-                </ul>
-              </div>
-            </section>
-
-            <!-- Support Section -->
-            <section
-              class="collapsible footer__section"
-              aria-labelledby="support-heading"
-            >
-              <header class="collapsible__header">
-                <h3
-                  id="support-heading"
-                  class="collapsible__heading footer__heading"
-                >
-                  Support
-                </h3>
-                <svg
-                  class="icon icon--white collapsible__chevron"
-                  aria-hidden="true"
-                >
-                  <use xlink:href="ico/sprite.svg#chevron"></use>
-                </svg>
-              </header>
-              <div
-                class="collapsible__content"
-                role="region"
-                aria-labelledby="support-heading"
-              >
-                <ul class="list">
-                  <li>
-                    <a href="#" aria-label="Contact our support team"
-                      >24/7 Support</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" aria-label="Browse our knowledge base"
-                      >Knowledge Base</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" aria-label="View frequently asked questions"
-                      >FAQ</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" aria-label="Community forum">Community</a>
-                  </li>
-                </ul>
-              </div>
-            </section>
-
-            <!-- Resources Section -->
-            <section
-              class="collapsible footer__section"
-              aria-labelledby="resources-heading"
-            >
-              <header class="collapsible__header">
-                <h3
-                  id="resources-heading"
-                  class="collapsible__heading footer__heading"
-                >
-                  Resources
-                </h3>
-                <svg
-                  class="icon icon--white collapsible__chevron"
-                  aria-hidden="true"
-                >
-                  <use xlink:href="ico/sprite.svg#chevron"></use>
-                </svg>
-              </header>
-              <div
-                class="collapsible__content"
-                role="region"
-                aria-labelledby="resources-heading"
-              >
-                <ul class="list">
-                  <li>
-                    <a href="#" aria-label="Check domain availability"
-                      >Domain Checker</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" aria-label="Website speed test">Speed Test</a>
-                  </li>
-                  <li>
-                    <a href="#" aria-label="Website templates">Templates</a>
-                  </li>
-                  <li>
-                    <a href="#" aria-label="Developer documentation"
-                      >Documentation</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </section>
-          </div>
-
-          <!-- Footer Bottom -->
-          <div class="footer__bottom">
-            <!-- Brand Section -->
-            <section class="footer__brand">
-              <img
-                src="images/logo1.png"
-                alt="Company Logo - Return to homepage"
-                class="footer__logo"
-              />
-              <p class="footer__tagline">
-                Empowering your digital presence with reliable, fast, and secure
-                hosting solutions.
-              </p>
-            </section>
-
-            <!-- Newsletter Signup -->
-            <section class="footer__newsletter">
-              <h3 class="footer__newsletter-title">Stay Updated</h3>
-              <p class="footer__newsletter-text">
-                Get the latest news and exclusive offers
-              </p>
-              <form
-                class="footer__newsletter-form"
-                aria-label="Newsletter signup"
-              >
-                <div class="input-group">
-                  <input
-                    type="email"
-                    class="input"
-                    placeholder="Enter your email"
-                    aria-label="Email address for newsletter"
-                    required
-                  />
-                  <button
-                    type="submit"
-                    class="btn btn--accent"
-                    aria-label="Subscribe to newsletter"
-                  >
-                    Subscribe
-                  </button>
-                </div>
-              </form>
-            </section>
-          </div>
-
-          <!-- Copyright -->
-          <div class="footer__copyright-section">
-            <div class="footer__copyright-content">
-              <p class="footer__copyright">
-                © 2025 Admin. All rights reserved.
-              </p>
-              <div class="footer__legal-links">
-                <a href="#" class="footer__legal-link">Privacy Policy</a>
-                <a href="#" class="footer__legal-link">Terms of Service</a>
-                <a href="#" class="footer__legal-link">Cookie Policy</a>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
+    </section>
+
+    <footer>
+      <footer class="block block--dark footer">
+        <div class="container grid footer__sections">
+          <!-- Section 1 -->
+          <section class="collapsible collapsible--expanded footer__section">
+            <header class="collapsible__header">
+              <h2 class="collapsible__heading footer__heading">Products</h2>
+              <svg class="icon icon--white collapsible__chevron">
+                <use xlink:href="ico/sprite.svg#chevron"></use>
+              </svg>
+            </header>
+            <div class="collapsible__content">
+              <ul class="list">
+                <li><a href="#">Website Hosting</a></li>
+                <li><a href="#">Free Automated Wordpress</a></li>
+                <li><a href="#">Migrations</a></li>
+              </ul>
+            </div>
+          </section>
+          <!-- Section 2 -->
+          <section class="collapsible footer__section">
+            <header class="collapsible__header">
+              <h2 class="collapsible__heading footer__heading">Company</h2>
+              <svg class="icon icon--white collapsible__chevron">
+                <use xlink:href="ico/sprite.svg#chevron"></use>
+              </svg>
+            </header>
+            <div class="collapsible__content">
+              <ul class="list">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Affiliates</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+          </section>
+          <!-- Section 3 -->
+          <section class="collapsible footer__section">
+            <header class="collapsible__header">
+              <h2 class="collapsible__heading footer__heading">Support</h2>
+              <svg class="icon icon--white collapsible__chevron">
+                <use xlink:href="ico/sprite.svg#chevron"></use>
+              </svg>
+            </header>
+            <div class="collapsible__content">
+              <ul class="list">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Knowledge Base</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+          </section>
+          <!-- Section 4 -->
+          <section class="collapsible footer__section">
+            <header class="collapsible__header">
+              <h2 class="collapsible__heading footer__heading">Domains</h2>
+              <svg class="icon icon--white collapsible__chevron">
+                <use xlink:href="ico/sprite.svg#chevron"></use>
+              </svg>
+            </header>
+            <div class="collapsible__content">
+              <ul class="list">
+                <li><a href="#">Domain Checker</a></li>
+                <li><a href="#">Domain Transfer</a></li>
+                <li><a href="#">Free Domain</a></li>
+              </ul>
+            </div>
+          </section>
+          <!-- Logo section -->
+          <section class="footer__brand">
+            <img src="images/logo1.png" alt="" />
+            <p class="footer__copyright">Copyright 2025 Admin</p>
+          </section>
+        </div>
+      </footer>
     </footer>
 
     <script src="js/main.js"></script>

@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Project</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav collapsible">
+        <a href="/" class="nav__brand">
+          <img class="img-logo" src="images/logo1.png" alt="Logo" />
+        </a>
+        <svg class="icon icon--white nav__toggler">
+          <use xlink:href="ico/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="#">Hosting</a></li>
+          <li class="nav__item"><a href="#">VPS</a></li>
+          <li class="nav__item"><a href="#">Domain</a></li>
+          <li class="nav__item"><a href="#">Pricing</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section container>
+      <section class="block block--dark block--skewed-left hero">
+        <div class="container grid grid--1x2">
+          <header class="hero__content block__header">
+            <h1 class="block__heading">Cloud Hosting for Pros</h1>
+            <p class="hero__tagline">
+              Deploy your websites in less than 60 seconds.
+            </p>
+            <a href="#" class="btn btn--accent btn--stretched">Get Started</a>
+          </header>
+
+          <picture>
+            <source
+              type="image/webp"
+              srcset="images/banner-570px.webp 1x, images/banner-1140px.webp 2x"
+            />
+
+            <source
+              type="image/png"
+              srcset="images/banner-570px.png 1x, images/banner-1140px.png 2x"
+            />
+
+            <img class="hero__image" src="images/banner.png" alt="" />
+          </picture>
+        </div>
+      </section>
+    </section>
+
+    <section>
+      <section class="block block--domain container">
+        <!-- Tiêu đề & mô tả -->
+        <header class="block__header">
+          <h2>Starting at $9 per month</h2>
+          <p>
+            Get your perfect domain name today with great prices and features.
+          </p>
+        </header>
+
+        <!-- Search Box -->
+        <div class="input-group">
+          <input
+            type="text"
+            class="input"
+            placeholder="Enter domain name here..."
+          />
+          <button class="btn btn--accent">
+            <svg class="icon icon--white">
+              <use xlink:href="ico/sprite.svg#search"></use>
+            </svg>
+            Search
+          </button>
+        </div>
+
+        <!-- Danh sách domain -->
+        <ul class="list block__domain-prices">
+          <li><span class="badge badge--secondary">.com $9</span></li>
+          <li>.sg $10</li>
+          <li>.space $11</li>
+          <li>.info $14</li>
+          <li>.net $10</li>
+          <li>.xyz $5</li>
+        </ul>
+      </section>
+    </section>
+
+    <section>
+      <section class="block block--plans container">
+        <!-- Header cho Plans Section -->
+        <header class="block__header">
+          <h2>Choose Your Perfect Plan</h2>
+          <p>
+            Flexible hosting solutions designed to grow with your business.
+            Choose the plan that fits your needs.
+          </p>
+        </header>
+
+        <div class="grid grid--1x3">
+          <!-- Plan 1 -->
+          <div class="card card--secondary">
+            <header class="card__header">
+              <h3 class="plan__name">Entry</h3>
+              <span class="plan__price">$14</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badge badge--secondary badge--small">10% OFF</span>
+              <p class="plan__description">
+                Perfect for small websites and blogs.
+              </p>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">1 Website</li>
+                <li class="list__item">50 GB SSD</li>
+                <li class="list__item">Free SSL</li>
+                <li class="list__item">24/7 Support</li>
+                <li class="list__item">99.9% Uptime</li>
+              </ul>
+              <a href="#" class="btn btn--outline btn--block">Buy Now</a>
+            </div>
+          </div>
+
+          <!-- Plan 2 (Popular) -->
+          <div class="card card--primary plan--popular">
+            <header class="card__header">
+              <h3 class="plan__name">Popular</h3>
+              <span class="plan__price">$24</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badge badge--primary badge--small">20% OFF</span>
+              <p class="plan__description">
+                Best for growing projects and startups.
+              </p>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">5 Websites</li>
+                <li class="list__item">100 GB SSD</li>
+                <li class="list__item">Free SSL + CDN</li>
+                <li class="list__item">Priority Support</li>
+                <li class="list__item">Advanced Analytics</li>
+              </ul>
+              <a href="#" class="btn btn--outline btn--block">Buy Now</a>
+            </div>
+          </div>
+
+          <!-- Plan 3 -->
+          <div class="card card--accent">
+            <header class="card__header">
+              <h3 class="plan__name">Premium</h3>
+              <span class="plan__price">$39</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badge badge--accent badge--small">30% OFF</span>
+              <p class="plan__description">
+                For high traffic and enterprise sites.
+              </p>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Unlimited Websites</li>
+                <li class="list__item">1 TB SSD</li>
+                <li class="list__item">Priority Support</li>
+                <li class="list__item">Advanced Security</li>
+                <li class="list__item">White-label Options</li>
+              </ul>
+              <a href="#" class="btn btn--outline btn--block">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Features Section -->
+    <section class="block block--features">
+      <div class="container">
+        <header class="block__header">
+          <h2>Host on the cloud to keep growing</h2>
+          <p>Scale your infrastructure with ease and reliability.</p>
+        </header>
+
+        <div class="features-grid">
+          <!-- Feature 1 -->
+          <article class="feature grid grid--1x2">
+            <div class="feature__content">
+              <div class="icon-container">
+                <svg class="icon">
+                  <use xlink:href="icons/sprite.svg#easy"></use>
+                </svg>
+              </div>
+              <h3 class="feature__heading">Super easy to use</h3>
+              <p>
+                Our intuitive control panel makes website management effortless.
+                Deploy, scale, and monitor your applications with just a few
+                clicks.
+              </p>
+              <a href="#" class="link-arrow">Learn more</a>
+            </div>
+
+            <picture>
+              <source
+                type="image/webp"
+                srcset="images/easy-570px.webp 1x, images/easy-1140px.webp 2x"
+              />
+              <source
+                type="image/jpg"
+                srcset="images/easy-570px.jpg 1x, images/easy-1140px.jpg 2x"
+              />
+              <img
+                class="feature__image"
+                src="images/easy@2x.jpg"
+                alt="Easy to use interface"
+              />
+            </picture>
+          </article>
+
+          <!-- Feature 2 -->
+          <article class="feature grid grid--1x2">
+            <div class="feature__content">
+              <div class="icon-container">
+                <svg class="icon">
+                  <use xlink:href="icons/sprite.svg#computer"></use>
+                </svg>
+              </div>
+              <h3 class="feature__heading">Simply fast websites</h3>
+              <p>
+                Experience lightning-fast loading times with our optimized
+                hosting infrastructure. Your visitors will enjoy seamless
+                browsing on any device.
+              </p>
+              <a href="#" class="link-arrow">Learn more</a>
+            </div>
+
+            <picture>
+              <img
+                class="feature__image"
+                src="images/fast.jpg"
+                alt="Fast website performance"
+              />
+            </picture>
+          </article>
+
+          <!-- Feature 3 -->
+          <article class="feature grid grid--1x2">
+            <div class="feature__content">
+              <div class="icon-container">
+                <svg class="icon">
+                  <use xlink:href="icons/sprite.svg#wordpress"></use>
+                </svg>
+              </div>
+              <h3 class="feature__heading">WordPress made easy</h3>
+              <p>
+                One-click WordPress installation with automatic updates and
+                security patches. Focus on your content while we handle the
+                technical details.
+              </p>
+              <a href="#" class="link-arrow">Learn more</a>
+            </div>
+
+            <picture>
+              <img
+                class="feature__image"
+                src="images/wordpress.jpg"
+                alt="WordPress hosting"
+              />
+            </picture>
+          </article>
+
+          <!-- Feature 4 -->
+          <article class="feature grid grid--1x2">
+            <div class="feature__content">
+              <div class="icon-container">
+                <svg class="icon">
+                  <use xlink:href="icons/sprite.svg#clock"></use>
+                </svg>
+              </div>
+              <h3 class="feature__heading">24/7 Expert support</h3>
+              <p>
+                Our dedicated support team is available around the clock to help
+                you succeed. Get expert assistance whenever you need it, day or
+                night.
+              </p>
+              <a href="#" class="link-arrow">Learn more</a>
+            </div>
+
+            <picture>
+              <img
+                class="feature__image"
+                src="images/support.jpg"
+                alt="24/7 customer support"
+              />
+            </picture>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Showcase Section -->
+    <section class="block block--dark block--skewed-right block-showcase">
+      <div class="container">
+        <header class="block__header">
+          <h2>User-friendly Control Panel</h2>
+          <p>
+            Manage your websites with ease using our intuitive dashboard.
+            Everything you need is just a click away.
+          </p>
+        </header>
+
+        <div class="grid grid--1x2">
+          <picture class="block-showcase__image">
+            <source
+              type="image/webp"
+              srcset="images/ipad-570px.webp 1x, images/ipad-1140px.webp 2x"
+            />
+            <source
+              type="image/png"
+              srcset="images/ipad-570px.png 1x, images/ipad-1140px.png 2x"
+            />
+            <img
+              src="images/ipad.png"
+              alt="User-friendly control panel interface"
+            />
+          </picture>
+
+          <ul class="list">
+            <li>
+              <div class="media">
+                <div class="media__image">
+                  <svg class="icon">
+                    <use xlink:href="ico/sprite.svg#line"></use>
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title">Easy Start & Managed Updates</h3>
+                  <p>
+                    Get your website up and running in minutes with our
+                    one-click installers. Automatic updates keep your site
+                    secure and running smoothly without any effort from you.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="media">
+                <div class="media__image">
+                  <svg class="icon">
+                    <use xlink:href="ico/sprite.svg#growth"></use>
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title">Staging, GIT & WP-CLI</h3>
+                  <p>
+                    Professional development tools at your fingertips. Test
+                    changes safely with staging environments, manage code with
+                    Git integration, and use WP-CLI for advanced WordPress
+                    management.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="media">
+                <div class="media__image">
+                  <svg class="icon">
+                    <use xlink:href="ico/sprite.svg#wordpress"></use>
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title">Dynamic Caching & More</h3>
+                  <p>
+                    Boost your website performance with intelligent caching
+                    systems. Our advanced optimization techniques ensure
+                    lightning-fast loading times for your visitors.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="block block--testimonials">
+      <div class="container">
+        <header class="block__header">
+          <h2>What our customers are saying</h2>
+          <p>
+            Discover why thousands of businesses trust us with their hosting
+            needs. Real stories from real customers who've grown with our
+            platform.
+          </p>
+        </header>
+
+        <div class="testimonials-grid">
+          <div class="card testimonial">
+            <div class="grid grid--1x2">
+              <div class="testimonial__image">
+                <img
+                  src="images/testimonial.jpg"
+                  alt="Sarah Johnson, CEO of TechStart"
+                />
+                <div class="icon-container icon-container--accent">
+                  <svg class="icon icon--white">
+                    <use xlink:href="ico/sprite.svg#quotes"></use>
+                  </svg>
+                </div>
+              </div>
+
+              <blockquote class="quote testimonial__quote">
+                <p class="quote__text">
+                  This hosting platform transformed our business completely. The
+                  speed, reliability, and support are absolutely outstanding.
+                  We've seen 300% growth since switching!
+                </p>
+                <footer>
+                  <div class="media">
+                    <div class="media__image">
+                      <svg class="icon quote__line">
+                        <use xlink:href="ico/sprite.svg#line"></use>
+                      </svg>
+                    </div>
+                    <div class="media__body">
+                      <h3 class="quote__author testimonial__quote-author">
+                        Sarah Johnson
+                      </h3>
+                      <p class="quote__organization">
+                        CEO, TechStart Solutions
+                      </p>
+                    </div>
+                  </div>
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+          <!-- Additional testimonials can be added here -->
+          <div class="card testimonial testimonial--alt">
+            <div class="grid grid--1x2">
+              <div class="testimonial__quote">
+                <p class="quote__text">
+                  The migration process was seamless, and the performance
+                  improvements were immediate. Our site loads 5x faster now.
+                  Highly recommend!
+                </p>
+                <footer>
+                  <div class="media">
+                    <div class="media__image">
+                      <svg class="icon quote__line">
+                        <use xlink:href="ico/sprite.svg#line"></use>
+                      </svg>
+                    </div>
+                    <div class="media__body">
+                      <h3 class="quote__author testimonial__quote-author">
+                        Michael Chen
+                      </h3>
+                      <p class="quote__organization">
+                        Founder, Digital Agency Pro
+                      </p>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+
+              <div class="testimonial__image">
+                <img
+                  src="images/testimonial.jpg"
+                  alt="Michael Chen, Founder of Digital Agency Pro"
+                />
+                <div class="icon-container icon-container--accent">
+                  <svg class="icon icon--white">
+                    <use xlink:href="ico/sprite.svg#quotes"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <section class="block block--dark footer" role="contentinfo">
+        <div class="container">
+          <!-- Footer Header -->
+          <div class="footer__header">
+            <h2 class="footer__title">Ready to Get Started?</h2>
+            <p class="footer__subtitle">
+              Join thousands of satisfied customers who trust our hosting
+              solutions
+            </p>
+            <div class="footer__cta">
+              <a href="#" class="btn btn--accent btn--stretched"
+                >Start Your Journey</a
+              >
+              <a href="#" class="btn btn--outline">Contact Sales</a>
+            </div>
+          </div>
+
+          <!-- Footer Content Grid -->
+          <div class="grid footer__sections">
+            <!-- Products Section -->
+            <section
+              class="collapsible collapsible--expanded footer__section"
+              aria-labelledby="products-heading"
+            >
+              <header class="collapsible__header">
+                <h3
+                  id="products-heading"
+                  class="collapsible__heading footer__heading"
+                >
+                  Products
+                </h3>
+                <svg
+                  class="icon icon--white collapsible__chevron"
+                  aria-hidden="true"
+                >
+                  <use xlink:href="ico/sprite.svg#chevron"></use>
+                </svg>
+              </header>
+              <div
+                class="collapsible__content"
+                role="region"
+                aria-labelledby="products-heading"
+              >
+                <ul class="list">
+                  <li>
+                    <a href="#" aria-label="Learn more about Website Hosting"
+                      >Website Hosting</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      aria-label="Learn more about Free Automated WordPress"
+                      >Free Automated WordPress</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" aria-label="Learn more about Migrations"
+                      >Migrations</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <!-- Company Section -->
+            <section
+              class="collapsible footer__section"
+              aria-labelledby="company-heading"
+            >
+              <header class="collapsible__header">
+                <h3
+                  id="company-heading"
+                  class="collapsible__heading footer__heading"
+                >
+                  Company
+                </h3>
+                <svg
+                  class="icon icon--white collapsible__chevron"
+                  aria-hidden="true"
+                >
+                  <use xlink:href="ico/sprite.svg#chevron"></use>
+                </svg>
+              </header>
+              <div
+                class="collapsible__content"
+                role="region"
+                aria-labelledby="company-heading"
+              >
+                <ul class="list">
+                  <li>
+                    <a href="#" aria-label="Learn more about our company"
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" aria-label="Join our affiliate program"
+                      >Affiliates</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" aria-label="Read our blog">Blog</a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="Career opportunities">Careers</a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <!-- Support Section -->
+            <section
+              class="collapsible footer__section"
+              aria-labelledby="support-heading"
+            >
+              <header class="collapsible__header">
+                <h3
+                  id="support-heading"
+                  class="collapsible__heading footer__heading"
+                >
+                  Support
+                </h3>
+                <svg
+                  class="icon icon--white collapsible__chevron"
+                  aria-hidden="true"
+                >
+                  <use xlink:href="ico/sprite.svg#chevron"></use>
+                </svg>
+              </header>
+              <div
+                class="collapsible__content"
+                role="region"
+                aria-labelledby="support-heading"
+              >
+                <ul class="list">
+                  <li>
+                    <a href="#" aria-label="Contact our support team"
+                      >24/7 Support</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" aria-label="Browse our knowledge base"
+                      >Knowledge Base</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" aria-label="View frequently asked questions"
+                      >FAQ</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" aria-label="Community forum">Community</a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <!-- Resources Section -->
+            <section
+              class="collapsible footer__section"
+              aria-labelledby="resources-heading"
+            >
+              <header class="collapsible__header">
+                <h3
+                  id="resources-heading"
+                  class="collapsible__heading footer__heading"
+                >
+                  Resources
+                </h3>
+                <svg
+                  class="icon icon--white collapsible__chevron"
+                  aria-hidden="true"
+                >
+                  <use xlink:href="ico/sprite.svg#chevron"></use>
+                </svg>
+              </header>
+              <div
+                class="collapsible__content"
+                role="region"
+                aria-labelledby="resources-heading"
+              >
+                <ul class="list">
+                  <li>
+                    <a href="#" aria-label="Check domain availability"
+                      >Domain Checker</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" aria-label="Website speed test">Speed Test</a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="Website templates">Templates</a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="Developer documentation"
+                      >Documentation</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+
+          <!-- Footer Bottom -->
+          <div class="footer__bottom">
+            <!-- Brand Section -->
+            <section class="footer__brand">
+              <img
+                src="images/logo1.png"
+                alt="Company Logo - Return to homepage"
+                class="footer__logo"
+              />
+              <p class="footer__tagline">
+                Empowering your digital presence with reliable, fast, and secure
+                hosting solutions.
+              </p>
+            </section>
+
+            <!-- Newsletter Signup -->
+            <section class="footer__newsletter">
+              <h3 class="footer__newsletter-title">Stay Updated</h3>
+              <p class="footer__newsletter-text">
+                Get the latest news and exclusive offers
+              </p>
+              <form
+                class="footer__newsletter-form"
+                aria-label="Newsletter signup"
+              >
+                <div class="input-group">
+                  <input
+                    type="email"
+                    class="input"
+                    placeholder="Enter your email"
+                    aria-label="Email address for newsletter"
+                    required
+                  />
+                  <button
+                    type="submit"
+                    class="btn btn--accent"
+                    aria-label="Subscribe to newsletter"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+              </form>
+            </section>
+          </div>
+
+          <!-- Copyright -->
+          <div class="footer__copyright-section">
+            <div class="footer__copyright-content">
+              <p class="footer__copyright">
+                © 2025 Admin. All rights reserved.
+              </p>
+              <div class="footer__legal-links">
+                <a href="#" class="footer__legal-link">Privacy Policy</a>
+                <a href="#" class="footer__legal-link">Terms of Service</a>
+                <a href="#" class="footer__legal-link">Cookie Policy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
